@@ -25,7 +25,7 @@ services:
       - loki
   grafana:
     image: grafana/grafana:latest
-    user: "1000"
+    user: root
     volumes:
     - /root/Logging-Loki/grafana:/var/lib/grafana
     ports:
